@@ -27,9 +27,24 @@
 <body>
     <h1>💖 Nuestro Aniversario 💖</h1>
     <div id="contador"></div>
-    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>
+      <!-- Corazones flotando -->
+  <div class="heart" style="left:20%;">❤️</div>
+  <div class="heart" style="left:40%;">💖</div>
+  <div class="heart" style="left:60%;">💕</div>
+  <div class="heart" style="left:80%;">💘</div>
+  
+  <!-- Botón interactivo -->
+  <button onclick="mostrarMensaje()">Haz clic para ver cuánto te amo</button>
+  <div id="mensaje">TE AMO MAS DE LO QUE CUALQUIER PERSONA EN ESTE MUNDO TE PUEDE AMOR. <br>
+TE AMO AUNQUE NO TE BAÑES Y SEAS SUCIA.<br>
+TE AMO CON TODO MI SER 💞</div>
+  
+    <br>    <br>    <br>    <br>   
 <img src="e1.jpg" alt="Nuestra foto juntos" width="300" style="margin-top:20px; border-radius:15px; box-shadow:0 0 10px rgba(0,0,0,0.3);">
     <script>
+        function mostrarMensaje() {
+      document.getElementById("mensaje").style.display = "block";
+    }
         // Cambia esta fecha por la de tu aniversari
         const fechaAniversario = new Date("2025-07-23"); 
 
