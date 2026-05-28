@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Aniversario</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffcccc, #ffe6e6);
+            text-align: center;
+            color: #333;
+        }
+        h1 {
+            color: #e60073;
+        }
+        #contador {
+            font-size: 24px;
+            margin-top: 20px;
+            background: #fff0f5;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>💖 Nuestro Aniversario 💖</h1>
+    <div id="contador"></div>
+
+    <script>
+        // Cambia esta fecha por la de tu aniversario
+        const fechaAniversario = new Date("2022-05-27"); 
+
+        function actualizarContador() {
+            const hoy = new Date(2026-07-23);
+            const diferencia = hoy - fechaAniversario;
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            document.getElementById("contador").innerHTML = 
+                "Han pasado " + dias + " días desde nuestro primer día juntos 💕";
+        }
+
+        actualizarContador();
+    </script>
+</body>
+</html>
